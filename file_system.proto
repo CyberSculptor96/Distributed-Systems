@@ -1,0 +1,47 @@
+// file_system.proto
+
+syntax = "proto3";
+
+service FileSystem {
+  rpc CreateFile(CreateFileRequest) returns (CreateFileResponse);
+  rpc ReadFile(ReadFileRequest) returns (ReadFileResponse);
+  rpc WriteFile(WriteFileRequest) returns (WriteFileResponse);
+  rpc DeleteFile(DeleteFileRequest) returns (DeleteFileResponse);
+}
+
+message CreateFileRequest {
+  string filename = 1;
+  string user = 2;
+}
+
+message CreateFileResponse {
+  bool success = 1;
+}
+
+message ReadFileRequest {
+  string filename = 1;
+  string user = 2;
+}
+
+message ReadFileResponse {
+  bytes data = 1;
+}
+
+message WriteFileRequest {
+  string filename = 1;
+  bytes data = 2;
+  string user = 3;
+}
+
+message WriteFileResponse {
+  bool success = 1;
+}
+
+message DeleteFileRequest {
+  string filename = 1;
+  string user = 2;
+}
+
+message DeleteFileResponse {
+  bool success = 1;
+}
