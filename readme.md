@@ -45,7 +45,7 @@
 
 ​		实现基本的访问控制列表（ACL），根据用户身份控制文件访问权限。
 
-### 1.3.5 本地测试和验证
+#### 1.3.5 本地测试和验证
 
 ​		使用 python  的 `concurrent.futures` 开发多线程以模拟多用户对分布式文件系统的并发访问。进行相关测试。
 
@@ -137,7 +137,7 @@ message DeleteFileResponse {
 }
 ```
 
-#### 3.3 生成gRPC代码
+#### 生成gRPC代码
 
 使用 `grpcio-tools` 从proto文件生成Python代码:
 
