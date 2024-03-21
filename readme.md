@@ -1,9 +1,4 @@
-<div align='center'>
-	<font size="10">基于gRPC的分布式文件系统</font>
-</div>
-<div align='center'>
-	<font size="5">（2023年秋季学期）</font>
-</div>
+# 基于gRPC的分布式文件系统（2023年秋季学期）
 
 
 
